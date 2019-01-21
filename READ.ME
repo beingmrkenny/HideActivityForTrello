@@ -1,0 +1,16 @@
+# README
+
+Hide Activity Details (Plus Other Tweaks) for Trello is a web extension for use with Trello. For more information, including how to install the extension for your own use, see <https://beingmrkenny.co.uk/web-extensions/hide-activity-trello>.
+
+## Firefox addon ID
+
+Reference: <https://bugzil.la/1323228>
+
+During development, to make the web extension between-page messaging system work in Firefox (e.g. to communicate changes in options to the Trello boards), you must add a temporary, fictional addon ID to `manifest.json`. Below is an example, which is fine to copy and paste. This goes in the top level of the manifest JSON object. This must only be used during development, and may cause issues in other browsers.
+
+	"applications": {
+		"gecko": {
+			"id": "addon@example.com",
+			"strict_min_version": "42.0"
+		}
+	},

@@ -1,8 +1,15 @@
 {
 	"manifest_version" : 2,
 
-	"name": "Hide Activity Details (+ Tweaks) for Trello",
-	"description": "Hides activity details on Trello cards. Can now also be set to hide completed checklist items",
+	"applications": {
+		"gecko": {
+			"id": "addon@example.com",
+			"strict_min_version": "42.0"
+		}
+	},
+
+	"name": "Hide Activity Details (Plus Other Tweaks) for Trello",
+	"description": "Hides all the activity details on Trello cards, leaving comments visible",
 	"homepage_url": "http://beingmrkenny.co.uk/web-extensions/hide-activity-trello",
 	"author" : "Mark Kenny",
 
@@ -21,7 +28,7 @@
 	],
 
 	"browser_action" : {
-		"default_title" : "Hide Activity (+ Other Tweaks) for Trello",
+		"default_title" : "Hide Activity + Other Tweaks for Trello",
 		"default_popup" : "options/index.html",
 		"default_icon" : "Icons/192.png"
 	},
