@@ -21,7 +21,7 @@
 	],
 
 	"browser_action" : {
-		"default_title" : "Hide Activity (+ Other Tweaks) for Trello",
+		"default_title" : "Hide Activity Details (+ Tweaks) for Trello",
 		"default_popup" : "options/index.html",
 		"default_icon" : "Icons/192.png"
 	},
