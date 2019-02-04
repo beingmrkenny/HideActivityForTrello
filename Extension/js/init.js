@@ -23,6 +23,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	DataStorage.initialise(() => {
 
+		if (window.location.pathname == '/login' && true === Global.getItem('options.FocusTwoFactor')) {
+			observe(
+				q('.two-factor'),
+				{attributes : true, attributeOldValue: true},
+				(mutations, observer) => {
+					if (mutations.attributeName == 'class' && mutations.oldValue.includes('hidden')) {
+						for (let twoFactor of qq('[name="two-factor"]')) {
+							if (!twoFactor.classList.contains('hidden')) {
+								twoFactor.focus();
+							}
+						}
+					}
+				}
+			);
+		}
+
 		// Observe window-wrapper when it exists
 		checkElement('.window-wrapper').then(windowWrapper => {
 			observe( windowWrapper, {childList: true}, () => {

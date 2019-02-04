@@ -20,6 +20,7 @@ class Options extends DataStorage {
 		var defaults = {
 			'options.HideActivity': true,
 			'options.HideCompleted' : false,
+			'options.FocusTwoFactor' : false,
 			'version' : 1
 		}
 
