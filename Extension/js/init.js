@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 						}
 						checklistObserver.disconnect();
 					},
-					1000 // REVIEW is it enough? sometimes misses it
+					500
 				));
 
 			});
