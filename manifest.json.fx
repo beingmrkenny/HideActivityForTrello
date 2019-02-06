@@ -3,7 +3,7 @@
 
 	"applications": {
 		"gecko": {
-			"id": "addon@example.com",
+			"id": "asdfasdfasdfasdfasdf@example.com",
 			"strict_min_version": "42.0"
 		}
 	},
@@ -13,7 +13,7 @@
 	"homepage_url": "http://beingmrkenny.co.uk/web-extensions/hide-activity-trello",
 	"author" : "Mark Kenny",
 
-	"version": "3.0",
+	"version": "3.2",
 
 	"icons": {
 		"16": "Icons/192.png",
@@ -42,6 +42,13 @@
 				"js/classes/Process.js",
 				"js/functions.js",
 				"js/init.js"
+			],
+			"matches": [ "*://trello.com/*" ],
+			"run_at": "document_start"
+		},
+		{
+			"css": [
+				"css/css.css"
 			],
 			"matches": [ "*://trello.com/*" ],
 			"run_at": "document_start"

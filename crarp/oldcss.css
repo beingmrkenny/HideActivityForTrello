@@ -1,0 +1,104 @@
+/*.bmko_hide-activity-show-label-text.body-card-label-text .card-label.mod-card-front,
+.bmko_hide-activity-show-label-text.body-card-label-text-off .card-label.mod-card-front,
+.bmko_hide-activity-show-label-text.body-card-label-text-on .card-label.mod-card-front {*/
+.card-label.mod-card-front {
+	/* transition: min-width .5s; */
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	min-width: 0;
+	box-sizing: border-box;
+	padding: 0 8px;
+}
+
+.bmko_hide-activity-show-label-text.body-card-label-text-on .card-label.mod-card-front {
+	/* -webkit-animation: .5s ease-out override_label_text_appear; */
+	animation: .5s ease-out override_label_text_appear
+}
+
+.bmko_hide-activity-show-label-text.body-card-label-text-off .card-label.mod-card-front {
+	/* -webkit-animation: .66s ease-in override_label_text_disappear forwards; */
+	animation: .66s ease-in override_label_text_disappear forwards;
+	/* min-width: 40px; */
+}
+
+@keyframes override_label_text_appear {
+	0% {
+		/* width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content; */
+		width: 40px;
+		height: 8px;
+		color: transparent
+	}
+
+	25% {
+
+		height: 8px;
+		padding-right: 10px
+	}
+
+	45% {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		height: 8px;
+		padding-right: 9px
+	}
+
+	53% {
+		height: 8px;
+		padding-right: 8px
+	}
+
+	75% {
+		height: 16px;
+		color: transparent
+	}
+
+	to {
+		color: #fff
+	}
+}
+
+@keyframes override_label_text_disappear {
+	0% {
+		color: #fff;
+		height: 16px;
+		line-height: 16px;
+		padding: 0 8px;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+	}
+
+	33% {
+		color: transparent;
+		height: 16px;
+		line-height: 16px;
+		/* width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content; */
+		/* width: 40px; */
+	}
+
+	66% {
+		height: 8px;
+		/* width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content; */
+		/* width: 40px; */
+		line-height: 100px;
+		color: transparent;
+		/* padding: 0; */
+	}
+
+	to {
+		color: transparent;
+		/* width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content; */
+		width: 40px;
+		padding: 0 8px;
+	}
+}

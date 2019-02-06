@@ -34,6 +34,9 @@ class OptionsPage {
 						value = input.value;
 				}
 				chrome.storage.sync.set( { [name] : value } );
+				if (name == 'options.ShowLabelText' && !Global.getItem('options.ShowLabelTextChanged')) {
+					chrome.storage.sync.set({ 'options.ShowLabelTextChanged' : true });
+				}
 			});
 		}
 	}

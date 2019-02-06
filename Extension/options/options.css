@@ -66,6 +66,14 @@ footer {
 	font-size: 13px;
 }
 
+footer p {
+	margin: .5em 0;
+}
+
+footer p:first-child {
+	margin-bottom: 1.5em;
+}
+
 .multiple-standard-options {
 	display: flex;
 }
@@ -190,18 +198,18 @@ option-widget input:disabled + label {
 }
 
 a:link {
-	color: #3365ff;
+	color: #0779bf;
 
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:visited {
-	color: #7482ad;
+	color: #0779bf;
 }
 
 a:hover,
 a:active {
-	color: #164ef9;
+	color: #0779bf;
 
 	text-decoration: underline;
 }

@@ -11,7 +11,6 @@ class DataStorage {
 				callback(results);
 			}
 		});
-
 		chrome.storage.onChanged.addListener( (changes, namespace) => {
 			for (let key in changes) {
 				var value = changes[key].newValue;
@@ -22,7 +21,6 @@ class DataStorage {
 				}
 			}
 		});
-
 	}
 
 	static _keyNameAllowed (keyName) {

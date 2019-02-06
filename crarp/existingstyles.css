@@ -1,0 +1,69 @@
+
+
+
+.card-label.mod-card-front {
+	float: left;
+	font-size: 12px;
+	font-weight: 700;
+	height: 8px;
+	line-height: 100px;
+	margin: 0 4px 4px 0;
+	max-width: 40px;
+	min-width: 40px;
+	padding: 0;
+	text-shadow: none;
+	width: auto
+}
+
+.body-card-label-text-on .card-label.mod-card-front,.body-card-label-text .card-label.mod-card-front {
+	height: 16px;
+	line-height: 16px;
+	padding: 0 8px;
+	max-width: 198px
+}
+
+.body-card-label-text-on .ui-sortable-helper .card-label.mod-card-front,.body-card-label-text .ui-sortable-helper .card-label.mod-card-front {
+	height: 8px;
+	line-height: 100px;
+	padding: 0;
+	max-width: 40px
+}
+
+.body-card-label-text-on.body-color-blind-mode-enabled .card-label.mod-card-front,.body-card-label-text.body-color-blind-mode-enabled .card-label.mod-card-front {
+	padding-left: 22px
+}
+
+.body-card-label-text-on.body-color-blind-mode-enabled .card-label.mod-card-front:before,.body-card-label-text.body-color-blind-mode-enabled .card-label.mod-card-front:before {
+	width: 16px
+}
+
+.body-card-label-text-on .card-label.mod-card-front {
+	-webkit-animation: .5s ease-out label_text_appear;
+	animation: .5s ease-out label_text_appear
+}
+
+.body-card-label-text-off .card-label.mod-card-front {
+	-webkit-animation: .66s ease-in label_text_disappear forwards;
+	animation: .66s ease-in label_text_disappear forwards;
+	height: 8px;
+	max-width: 198px
+}
+
+
+
+.body-color-blind-mode-enabled.body-card-label-text-on .card-label.mod-card-front:before {
+	-webkit-animation: .5s ease-out label_text_appear_color_blind_before;
+	animation: .5s ease-out label_text_appear_color_blind_before
+}
+
+
+
+.body-color-blind-mode-enabled.body-card-label-text-off .card-label.mod-card-front {
+	-webkit-animation-name: label_text_disappear_color_blind;
+	animation-name: label_text_disappear_color_blind
+}
+
+.body-color-blind-mode-enabled.body-card-label-text-off .card-label.mod-card-front:before {
+	-webkit-animation: .66s ease-out label_text_disappear_color_blind_before forwards;
+	animation: .66s ease-out label_text_disappear_color_blind_before forwards
+}
