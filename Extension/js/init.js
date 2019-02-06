@@ -33,7 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	DataStorage.initialise(() => {
 
 		if (Global.getItem('options.ShowLabelTextChanged')) {
-			qid('classic-body').classList.add('bmko_hide-activity-show-label-text');
+			let classicBody = qid('classic-body');
+			if (classicBody) {
+				classicBody.classList.add('bmko_hide-activity-show-label-text');
+			}
 		}
 
 		Process.executeWhenTitleChanges(() => {
