@@ -33,6 +33,47 @@
 
 			<div class="standard-options">
 				<option-widget>
+					<input type="checkbox" class="options-input" id="options.ClickableURLIcons" name="options.ClickableURLIcons">
+					<label for="options.ClickableURLIcons">
+						Clickable URL icons
+					</label>
+				</option-widget>
+				<label for="options.ClickableURLIcons">
+					<strong>Make clickable icons for URLs in card titles</strong>
+					Default: off
+				</label>
+			</div>
+
+			<div class="standard-options">
+				<option-widget>
+					<input type="checkbox" class="options-input" id="options.ClickableAtlassianIcons" name="options.ClickableAtlassianIcons">
+					<label for="options.ClickableAtlassianIcons">
+						Clickable Atlassian icons
+					</label>
+				</option-widget>
+				<label for="options.ClickableAtlassianIcons">
+					<strong>Make clickable icons for Atlassian issues (JIRA and Fisheye) in card titles</strong>
+					Default: off
+				</label>
+			</div>
+			<div class="atlassian-url-inputs">
+				<p>
+					Paste URLs for JIRA and Fisheye issues in the inputs below. If a JIRA or Fisheye issue key is added to a Trello card, a clickble link to that issue will be added. Fisheye reviews need an <b>F</b> immediately after the issue key (e.g. “ABCD-1234<b>F</b>”).
+				</p>
+				<p>
+					<label for="options.JiraURLPattern">Sample JIRA URL:</label><br>
+					<input type="text" class="js-check-changed options-input atlassian-url-input" id="options.JiraURLPattern" name="options.JiraURLPattern" size="35">
+					<button type="button" class="options-button" data-for="options.JiraURLPattern">Save</button>
+				</p>
+				<p>
+					<label for="options.FisheyeURLPattern">Sample Fisheye URL:</label><br>
+					<input type="url" class="js-check-changed options-input atlassian-url-input" id="options.FisheyeURLPattern" name="options.FisheyeURLPattern" size="35" pattern="^https?://.*(\(key\)|[A-Za-z0-9]+-[0-9]+).*">
+					<button type="button" class="options-button" data-for="options.FisheyeURLPattern">Save</button>
+				</p>
+			</div>
+
+			<div class="standard-options">
+				<option-widget>
 					<input type="checkbox" class="options-input" id="options.HideCompleted" name="options.HideCompleted">
 					<label for="options.HideCompleted">
 						Hide Completed Items
@@ -81,11 +122,11 @@
 		</p>
 
 		<p>
-			Please try refreshing the Trello page if you encounter a problem
+			<strong>Please try refreshing the Trello page if you encounter a problem</strong>
 		</p>
 
 		<p>
-			<a href="http://beingmrkenny.co.uk/web-extensions/hide-activity-trello" target="_blank">Visit the homepage</a> for more information
+			<a href="http://beingmrkenny.co.uk/web-extensions/hide-activity-trello" target="_blank">Visit the homepage</a> for more information, including information on how your data is stored (long story short, it’s stored in your browser, and your browser may store this in your sync account).
 		</p>
 
 	</footer>
@@ -95,8 +136,9 @@
 	<script src="../js/classes/Global.js"></script>
 	<script src="../js/classes/DataStorage.js"></script>
 
+	<script src="AtlassianInputDisplay.js"></script>
 	<script src="../js/classes/Options.js"></script>
-	<script src="../js/classes/OptionsPage.js"></script>
+	<script src="OptionsPage.js"></script>
 
 	<script src="optionsPageInit.js"></script>
 

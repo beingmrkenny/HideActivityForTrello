@@ -4,24 +4,25 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-	"fs-extra": "^7.0.1",
-	"glob": "^7.1.3",
-	"gulp": "^4.0.1",
-	"gulp-json-editor": "^2.5.1",
-	"gulp-zip": "^4.2.0"
+    "fs-extra": "",
+    "glob": "",
+    "gulp": "",
+    "gulp-json-editor": "",
+    "gulp-zip": "",
+    "mini-svg-data-uri": ""
   },
   "devDependencies": {},
   "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-	"type": "git",
-	"url": "git+https://github.com/beingmrkenny/HideActivityForTrello.git"
+    "type": "git",
+    "url": "git+https://github.com/beingmrkenny/HideActivityForTrello.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-	"url": "https://github.com/beingmrkenny/HideActivityForTrello/issues"
+    "url": "https://github.com/beingmrkenny/HideActivityForTrello/issues"
   },
   "homepage": "https://github.com/beingmrkenny/HideActivityForTrello#readme"
 }

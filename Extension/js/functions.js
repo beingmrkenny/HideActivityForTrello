@@ -10,8 +10,22 @@ function qq(query, context = document) {
 	return context.querySelectorAll(query);
 }
 
-function observe(targets, passedOptions, callback) {
+function ovalue(obj) {
+	var base = obj;
+	if (typeof base == 'object' && base !== null) {
+		for (var i=1, x=arguments.length; i<x; i++) {
+			if (typeof base[arguments[i]] == 'object' && base[arguments[i]] !== null) {
+				base = base[arguments[i]];
+			} else {
+				base = base[arguments[i--]];
+				break;
+			}
+		}
+	}
+	return base;
+}
 
+function observe(targets, passedOptions, callback) {
 	var options = {},
 		availableOptions = {
 			childList: false,
@@ -21,11 +35,9 @@ function observe(targets, passedOptions, callback) {
 			attributeOldValue: false,
 			characterDataOldValue: false
 		};
-
 	if (targets && targets instanceof HTMLElement) {
 		targets = [targets];
 	}
-
 	for (let key in passedOptions) {
 		if (!availableOptions.hasOwnProperty(key)) {
 			console.log(`${key} is not a valid MutationObserver option`);
@@ -35,14 +47,9 @@ function observe(targets, passedOptions, callback) {
 			options[key] = passedOptions[key];
 		}
 	}
-
 	var observer = new MutationObserver(function (nodes) {
-		if (nodes.length == 1) {
-			nodes = nodes[0];
-		}
 		callback(nodes, observer);
 	});
-
 	if (targets) {
 		for (let target of targets) {
 			if (target instanceof HTMLElement) {
@@ -50,17 +57,15 @@ function observe(targets, passedOptions, callback) {
 			}
 		}
 	}
-
 	return observer;
-
 }
 
-async function checkElement (selector) {
+async function executeWhenElementExists (selector) {
 	while (q(selector) === null) {
 		await new Promise(resolve => requestAnimationFrame(resolve))
 	}
 	return q(selector);
-};
+}
 
 function debounce(handlerFunction, wait, immediate) {
 	var timeout;
@@ -75,4 +80,14 @@ function debounce(handlerFunction, wait, immediate) {
 		timeout = setTimeout(later, wait);
 		if (callNow) handlerFunction.apply(context, args);
 	};
-};
+}
+
+function createElement(string) {
+	if (typeof (string) != 'string') {
+		throw 'String must be passed to createElement';
+	}
+	string = string.trim();
+	var container = document.createElement('div')
+	container.innerHTML = string;
+	return container.firstElementChild;
+}

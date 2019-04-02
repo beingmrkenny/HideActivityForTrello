@@ -6,7 +6,7 @@
 	"homepage_url": "http://beingmrkenny.co.uk/web-extensions/hide-activity-trello",
 	"author" : "Mark Kenny",
 
-	"version": "3.2.2",
+	"version": "3.3",
 
 	"icons": {
 		"16": "Icons/192.png",
@@ -32,6 +32,8 @@
 				"js/classes/Global.js",
 				"js/classes/DataStorage.js",
 				"js/classes/Options.js",
+				"js/classes/Clickers.js",
+				"js/classes/LinkLinks.js",
 				"js/classes/Process.js",
 				"js/functions.js",
 				"js/init.js"
