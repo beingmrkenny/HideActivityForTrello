@@ -11,7 +11,7 @@ class Process {
 	}
 
 	static executeWhenBoardIsDoneLoading (callback) {
-		var bodyObserver = observe( qid('classic-body'), {childList: true, subtree: true},
+		var bodyObserver = observe( qid('trello-root'), {childList: true, subtree: true},
 			debounce (
 				() => {
 					callback();

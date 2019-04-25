@@ -1,0 +1,27 @@
+{
+  "name": "hideactivityfortrello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+	"fs-extra": "^7.0.1",
+	"glob": "^7.1.3",
+	"gulp": "^4.0.1",
+	"gulp-json-editor": "^2.5.1",
+	"gulp-zip": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+	"type": "git",
+	"url": "git+https://github.com/beingmrkenny/HideActivityForTrello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+	"url": "https://github.com/beingmrkenny/HideActivityForTrello/issues"
+  },
+  "homepage": "https://github.com/beingmrkenny/HideActivityForTrello#readme"
+}

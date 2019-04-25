@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	DataStorage.initialise(() => {
 
 		if (Global.getItem('options.ShowLabelTextChanged')) {
-			let classicBody = qid('classic-body');
+			let classicBody = qid('trello-root');
 			if (classicBody) {
 				classicBody.classList.add('bmko_hide-activity-show-label-text');
 			}
