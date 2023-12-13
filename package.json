@@ -1,28 +1,24 @@
 {
-  "name": "hideactivityfortrello",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "fs-extra": "",
-    "glob": "",
-    "gulp": "",
-    "gulp-json-editor": "",
-    "gulp-zip": "",
-    "mini-svg-data-uri": ""
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/beingmrkenny/HideActivityForTrello.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/beingmrkenny/HideActivityForTrello/issues"
-  },
-  "homepage": "https://github.com/beingmrkenny/HideActivityForTrello#readme"
+    "name": "hideactivityfortrello",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "fs-extra": ""
+    },
+    "devDependencies": {},
+    "scripts": {
+        "manifest": "node --unhandled-rejections=strict build/manifest.js",
+        "release": "node --unhandled-rejections=strict build/release.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/beingmrkenny/HideActivityForTrello.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/beingmrkenny/HideActivityForTrello/issues"
+    },
+    "homepage": "https://github.com/beingmrkenny/HideActivityForTrello#readme"
 }

@@ -6,7 +6,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	min-width: 450px;
 	margin: 0;
 	padding: 0;
 }
@@ -64,12 +64,12 @@ footer {
 	color: gray;
 
 	line-height: 1.2;
-	text-align: center;
 	font-size: 13px;
+	text-align: center;
 }
 
 footer p {
-	margin: 0.5em 0;
+	margin: .5em 0;
 }
 
 footer p:first-child {
@@ -111,7 +111,6 @@ footer p:first-child {
 
 .standard-options label strong {
 	display: block;
-
 	margin-bottom: 10px;
 
 	color: #474747;
@@ -129,10 +128,9 @@ option-widget input {
 
 option-widget label {
 	display: flex;
-	position: relative;
 	flex-direction: column;
 	align-items: center;
-
+	position: relative;
 	width: 100px;
 	padding: 5px;
 	padding-top: 33px;
@@ -142,8 +140,8 @@ option-widget label {
 	border-radius: 3px;
 
 	line-height: 1;
-	text-align: center;
 	font-size: 12px;
+	text-align: center;
 }
 
 option-widget label::before,
@@ -155,39 +153,35 @@ option-widget label::before {
 	display: inline-block;
 	top: 10px;
 	left: 50%;
-
 	width: 40px;
 	height: 18px;
 	margin-left: -27px;
 	padding: 0 6px;
 
 	content: "OFF";
-
 	background: gray;
 	border-radius: 10px;
 
 	line-height: 19px;
-	text-align: right;
 	font-size: 13px;
+	text-align: right;
 
-	transition: background 0.25s;
+	transition: background .25s;
 }
 
 option-widget label::after {
 	display: inline-block;
 	top: 12px;
 	left: 50%;
-
 	width: 14px;
 	height: 14px;
 	margin-left: -25px;
 
 	content: " ";
-
 	background: white;
 	border-radius: 10px;
 
-	transition: margin-left 0.25s;
+	transition: margin-left .25s;
 }
 
 option-widget input:checked + label {
@@ -197,7 +191,6 @@ option-widget input:checked + label {
 
 option-widget input:checked + label::before {
 	content: "ON";
-
 	background: #64bb02;
 
 	text-align: left;
@@ -208,7 +201,7 @@ option-widget input:checked + label::after {
 }
 
 option-widget input:disabled + label {
-	opacity: 0.3;
+	opacity: .3;
 }
 
 
@@ -217,7 +210,6 @@ option-widget input:disabled + label {
 .atlassian-url-inputs {
 	display: flex;
 	flex-direction: column;
-
 	margin-top: 20px;
 	margin-left: 20px;
 
@@ -226,8 +218,8 @@ option-widget input:disabled + label {
 
 .atlassian-url-inputs button,
 .atlassian-url-inputs input {
-	padding: 8px 12px;
 	box-sizing: border-box;
+	padding: 8px 12px;
 
 	color: #172b4d;
 	border: none;
@@ -260,15 +252,15 @@ option-widget input:disabled + label {
 	padding: 8px 12px;
 
 	color: #172b4d;
-	background-color: rgba(9,30,66,0.08);
+	background-color: rgba(9,30,66,.08);
 	border: none;
 	border-radius: 3px;
 	box-shadow: none;
 
 	line-height: 20px;
-	text-align: left;
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
 	font-weight: 400;
+	text-align: left;
 	text-decoration: none;
 
 	cursor: pointer;
@@ -276,7 +268,7 @@ option-widget input:disabled + label {
 
 .atlassian-url-inputs button:hover {
 	color: #172b4d;
-	background-color: rgba(9,30,66,0.13);
+	background-color: rgba(9,30,66,.13);
 }
 
 .atlassian-url-label,

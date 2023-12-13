@@ -1,5 +1,19 @@
 web-ext-artifacts/
 .web-extension-id
-node_modules/
 Extension/manifest.json
+
+.sass-cache
+.csscomb.json
+node_modules
+npm-debug.log
 package-lock.json
+
+# Mac Specific
+*.scpt
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Snet Crap
+.idea/
+*.iml
